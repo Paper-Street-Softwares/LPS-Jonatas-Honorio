@@ -5,12 +5,12 @@ import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
 
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
-import aboutImg from '../assets/imgs/about/aboutImg.webp'
+// import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+// import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
   Baby,
@@ -398,7 +398,7 @@ const content = {
     },
     about: {
       imagem: {
-        img: aboutImg,
+        // img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
       miniTag: 'A_Definir',
@@ -489,7 +489,7 @@ const content = {
         </h1>
       ),
       subtitle: '',
-      img: imgSteps,
+      // img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {

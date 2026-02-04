@@ -8,8 +8,8 @@ export default function AlertSection() {
         <div className="flex flex-col">
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
-            <AlertTriangle className="text-red-500 w-7 h-7" />
-            <span className="uppercase tracking-widest text-sm text-red-500 font-semibold">
+            <AlertTriangle className="text-red-800 w-7 h-7" />
+            <span className="uppercase tracking-widest text-sm text-red-800 font-semibold">
               Alerta Profissional
             </span>
           </div>
@@ -17,7 +17,7 @@ export default function AlertSection() {
           {/* Título */}
           <h2 className="text-3xl md:text-4xl font-mainFont font-medium mb-4 max-w-xl">
             O mercado mudou —{' '}
-            <span className="text-red-500">e você pode estar em risco</span>
+            <span className="text-red-800">e você pode estar em risco</span>
           </h2>
 
           {/* Texto principal */}
@@ -36,7 +36,7 @@ export default function AlertSection() {
         {/* COLUNA DIREITA — RETÂNGULOS */}
         <div className="flex flex-col gap-8">
           {/* Frase de impacto */}
-          <div className="border-l-4 border-red-500 pl-6 py-4 bg-terciary rounded-r-lg font-secondFont">
+          <div className="border-l-4 border-red-800 pl-6 py-4 bg-terciary rounded-r-lg font-secondFont">
             <p className="text-xl font-bold">
               Não se trata mais apenas de vender bem.
             </p>
@@ -53,19 +53,19 @@ export default function AlertSection() {
 
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-red-500 rounded-full" />
+                <span className="w-2 h-2 bg-red-800 rounded-full" />
                 <span>Obsolescência profissional</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-red-500 rounded-full" />
+                <span className="w-2 h-2 bg-red-800 rounded-full" />
                 <span>Perda de comissão</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-red-500 rounded-full" />
+                <span className="w-2 h-2 bg-red-800 rounded-full" />
                 <span>Passivo judicial</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-red-500 rounded-full" />
+                <span className="w-2 h-2 bg-red-800 rounded-full" />
                 <span>Risco patrimonial pessoal</span>
               </li>
             </ul>
