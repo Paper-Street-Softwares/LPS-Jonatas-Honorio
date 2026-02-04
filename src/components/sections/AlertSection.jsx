@@ -36,7 +36,7 @@ export default function AlertSection() {
         {/* COLUNA DIREITA — RETÂNGULOS */}
         <div className="flex flex-col gap-8">
           {/* Frase de impacto */}
-          <div className="border-l-4 border-red-500 pl-6 py-4 bg-black/50 rounded-r-lg font-secondFont">
+          <div className="border-l-4 border-red-500 pl-6 py-4 bg-terciary rounded-r-lg font-secondFont">
             <p className="text-xl font-bold">
               Não se trata mais apenas de vender bem.
             </p>
@@ -46,7 +46,7 @@ export default function AlertSection() {
           </div>
 
           {/* Lista de riscos */}
-          <div className="bg-black text-white rounded-xl p-8 shadow-xl font-secondFont">
+          <div className="bg-primaryDark text-white rounded-xl p-8 shadow-xl font-secondFont">
             <p className="font-bold text-lg mb-6">
               Quem ignora essa transformação caminha para:
             </p>

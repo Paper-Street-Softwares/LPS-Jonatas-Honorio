@@ -2,20 +2,20 @@ import { Gavel, FileText } from 'lucide-react'
 
 export default function DifferentialSection() {
   return (
-    <section className="w-full bg-darkOpacity py-20 px-6">
+    <section className="w-full bg-white py-20 px-6">
       <div className="max-w-[1215px] mx-auto flex flex-col items-center text-center">
         {/* Tag */}
-        <span className="uppercase tracking-widest text-sm font-semibold text-white mb-4">
+        <span className="uppercase tracking-widest text-sm font-semibold text-black mb-4">
           Prova na Prática
         </span>
 
         {/* Título */}
-        <h2 className="text-3xl md:text-4xl font-mainFont text-white mb-10 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-mainFont text-black mb-10 max-w-3xl">
           Mais que teoria: prática forense real
         </h2>
 
         {/* Subtexto */}
-        <p className="text-lg text-white mb-14 max-w-3xl">
+        <p className="text-lg text-black mb-14 max-w-3xl">
           O que você aprende aqui é exatamente o que protege sua comissão e seu
           CPF.
         </p>
@@ -23,7 +23,7 @@ export default function DifferentialSection() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
           {/* Card 1 */}
-          <div className="bg-neutral-900/60 border border-white/10 rounded-2xl p-8 text-left shadow-sm hover:shadow-md transition">
+          <div className="bg-primaryDark border border-white/10 rounded-2xl p-8 text-left shadow-sm hover:shadow-md transition">
             <div className="flex items-center gap-3 mb-4">
               <Gavel className={`w-6 h-6 text-primaryLight`} />
               <h3 className="text-xl font-bold text-white">
@@ -50,7 +50,7 @@ export default function DifferentialSection() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-neutral-900/60 border border-white/10 rounded-2xl p-8 text-left shadow-sm hover:shadow-md transition">
+          <div className="bg-primaryDark border border-white/10 rounded-2xl p-8 text-left shadow-sm hover:shadow-md transition">
             <div className="flex items-center gap-3 mb-4">
               <FileText className={`w-6 h-6 text-primaryLight`} />
               <h3 className="text-xl font-bold text-white">

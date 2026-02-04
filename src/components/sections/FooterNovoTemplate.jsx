@@ -53,7 +53,11 @@ function FooterNovoTemplate({
   }
 
   return (
-    <SectionArea className={`${backgroundMode} pb-4`} paddingbot={false}>
+    <SectionArea
+      className={`${backgroundMode} pb-4`}
+      paddingbot={false}
+      paddingtop={false}
+    >
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
           <div className="container mx-auto">
@@ -61,7 +65,7 @@ function FooterNovoTemplate({
               className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full`}
             >
               {/* Logo e infos */}
-              <div className="space-y-6">
+              {/* <div className="space-y-6">
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
@@ -103,10 +107,10 @@ function FooterNovoTemplate({
                     youtube
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Links rápidos */}
-              <div className="flex flex-col justify-center sm:items-center gap-8 tablet2:justify-center ">
+              {/* <div className="flex flex-col justify-center sm:items-center gap-8 tablet2:justify-center ">
                 <div className="w-fit ">
                   <h1
                     className={`font-bold font-secondFont text-lg mb-6 ${text}`}
@@ -146,10 +150,10 @@ function FooterNovoTemplate({
                     })}
                   </ul>
                 </div>
-              </div>
+              </div> */}
 
               {/* Contato */}
-              <div className="justify-start tablet2:justify-start flex flex-col gap-6">
+              {/* <div className="justify-start tablet2:justify-start flex flex-col gap-6">
                 <div className="w-fit">
                   <h1
                     className={`font-bold font-secondFont text-lg mb-6 ${text}`}
@@ -199,7 +203,7 @@ function FooterNovoTemplate({
                     )}
                   </ul>
                 </div>
-              </div>
+              </div> */}
 
               {/* Mapa */}
               {mapa && (
@@ -218,11 +222,11 @@ function FooterNovoTemplate({
               )}
             </div>
 
-            <hr
+            {/* <hr
               className={`pb-6 border-t ${text} ${
                 colorMode === 'light' ? 'opacity-90' : 'opacity-20'
               } w-full`}
-            />
+            /> */}
 
             {/* Footer Bottom */}
             <div

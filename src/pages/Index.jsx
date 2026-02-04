@@ -56,7 +56,7 @@ export default function Index() {
     <>
       <ColorModeProvider>
         {/* Render imediato */}
-        <NavbarNovaTemplate colorMode={colorMode} />
+        {/* <NavbarNovaTemplate colorMode={colorMode} /> */}
 
         <main>
           {/* LCP — NÃO usar lazy */}

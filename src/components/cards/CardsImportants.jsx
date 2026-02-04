@@ -7,7 +7,7 @@ function CardsImportants({ title, paragraph, colorMode }) {
   let bgCircle, bgCircleHover, bgCard, titleMode, description
   switch (colorMode) {
     case 'light':
-      bgCard = 'bg-white hover:bg-black'
+      bgCard = 'bg-white hover:bg-primaryDark'
       bgCircle = 'bg-primaryDark'
       bgCircleHover =
         'group-hover:bg-white group-hover:border-2 group-hover:border-black'
