@@ -20,10 +20,8 @@ import {
   Home,
   Key,
   LucideIdCard,
-  BriefcaseBusiness,
   Lock,
   Scale,
-  Shield,
   Car,
   HandCoins,
   Check,
@@ -34,14 +32,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dr. José Negreiros',
+  name: 'Dr. Jonatas Honório',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'negreirosadvocaciajuridica.com.br', // Sem "www"
+  domain: 'complianceimobiliario.com.br', // Sem "www"
   phone: {
-    ddd: '69',
-    firstPart: '98100', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0109', // Apenas os 4 últimos números
+    ddd: '31',
+    firstPart: '99176', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '1967', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -56,10 +54,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Rua Geraldo Siqueira,</p>
-      <p>nº 2690, Caladinho,</p>
-      <p>Porto Velho - RO,</p>
-      <p>CEP 76808-270</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -73,7 +71,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>Atendimento em regime de plantão 24h via WhatsApp</p>
+      <p>A_Definir</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
@@ -104,8 +102,8 @@ const content = {
       },
       menuItems: [
         'Início',
-        'Serviços',
-        'Sobre',
+        // 'Serviços',
+        // 'Sobre',
         // 'Perguntas',
         // 'Blog',
         // 'Mapa',
@@ -116,12 +114,13 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA EM PORTO VELHO - RO',
+      miniTag: 'Compliance Imobiliário Avançado',
       title: (
         <h1>
-          Precisa de auxílio de um{' '}
+          Pare de ser um “Vendedor de Imóveis” e torne-se um Agente de Segurança
+          Jurídica de{' '}
           <span className="destaque relative italic font-light">
-            Advogado
+            Elite
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -149,13 +148,16 @@ const content = {
               </svg>
             </span>
           </span>
-          ?
         </h1>
       ),
       subtitle: (
         <p>
-          Atuamos com responsabilidade para orientar e defender você em decisões
-          importantes.
+          Domine o Compliance Imobiliário e blinde sua comissão, sua carreira e
+          o patrimônio dos seus clientes com o método de Due Diligence do Dr.
+          Jonatas Honório.
+          <br />
+          <br />O único treinamento com videoaulas de casos reais e minutas
+          contratuais blindadas prontas para uso.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -164,12 +166,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Seja atendido agora no WhatsApp',
+      ctaButtonText: 'Quero conhecer o método',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Não espere nem mais um minuto, sua liberdade depende disso!',
+        text: 'A_Definir',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -193,59 +195,147 @@ const content = {
       },
     },
     important: {
-      miniTag: 'Atenção',
-      title: 'O que é importante saber ',
+      miniTag: 'Riscos Reais da Atuação Imobiliária',
+      title: 'Você está preparado para lidar com isso?',
       cards: {
         card1: {
-          title: 'Preciso pagar alguma coisa para dar entrada no meu processo?',
+          title: 'Vícios ocultos',
           paragraph:
-            'Depende do caso, mas esperar para descobrir sozinho costuma sair mais caro. Fale comigo agora para entender exatamente o que precisa ser feito e evitar prejuízos.',
+            'A responsabilidade sobre a qualidade do imóvel vem sendo ampliada pelos tribunais',
         },
         card2: {
-          title:
-            'Meu problema ainda não virou processo. Dá pra resolver antes?',
+          title: 'Atrasos de obra',
           paragraph:
-            'Em muitos casos, sim. E agir antes pode mudar tudo. Entre em contato imediatamente para analisar sua situação enquanto ainda há tempo.',
+            'Entenda quando a imobiliária pode — ou não — responder solidariamente.',
         },
         card3: {
-          title: 'Se eu esperar mais um pouco, isso pode piorar?',
+          title: 'Bypass e perda de comissão',
           paragraph:
-            'Pode. E geralmente piora. Quanto mais você demora, menos opções existem. Fale comigo agora para agir no momento certo.',
+            'Saiba usar a cláusula de exclusividade e o Art. 726 do Código Civil como escudo jurídico.',
         },
         card4: {
-          title:
-            'Posso tentar resolver isso sozinho ou preciso de advogado agora?',
+          title: 'Riscos penais',
           paragraph:
-            'Tentar sozinho costuma gerar erros difíceis de corrigir depois. O ideal é orientação imediata para não comprometer seu caso desde o início.',
+            'Compreenda a linha tênue entre erro operacional e apropriação indébita.',
         },
       },
-      fraseObs:
-        'Cada caso é diferente. Agir rápido, com orientação jurídica, pode mudar completamente o rumo da sua situação.',
-      ctaButtonText: 'Falar agora com um advogado',
+      fraseObs: '',
+      ctaButtonText: 'Acesse agora o curso',
     },
     features: {
-      miniTag: 'ÁREAS DE ATUAÇÃO',
+      miniTag: 'Conteúdo Programático',
       title: (
         <h1>
-          Atuação jurídica com
-          <span className="destaque italic font-light">
-            {' '}
-            responsabilidade
-          </span>{' '}
-          e<span className="destaque italic font-light"> proximidade</span>
+          O que
+          <span className="destaque italic font-light"> você </span>
+          vai aprender
         </h1>
       ),
-      subtitle:
-        'Unimos conhecimento técnico e atendimento humano para orientar você com clareza em cada etapa.',
+      subtitle: '',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'ética e responsabilidade',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Direito Penal',
+          title: 'Módulo 1 — O Corretor no Sistema Jurídico',
           subtitle:
-            'Atuação firme e responsável para quem enfrenta acusações ou investigações criminais.',
+            'A anatomia jurídica da profissão e a Teoria do Resultado Útil.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Lock />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card2: {
+          title: 'Módulo 2 — Compliance na Captação',
+          subtitle: 'A captação como marco zero da responsabilidade civil.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Car />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'Módulo 3 — Documentação do Imóvel',
+          subtitle:
+            'Engenharia da segurança jurídica e o Princípio da Concentração na Matrícula.',
+          description: (
+            <div>
+              A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <HandCoins />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card4: {
+          title: 'Módulo 4 — Documentação das Partes (KYC)',
+          subtitle:
+            'Prevenção à lavagem de dinheiro (COAF) e análise de capacidade civil.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card5: {
+          title: 'Módulo 5 — Publicidade e Oferta',
+          subtitle:
+            'Como evitar que um anúncio no Instagram se torne uma condenação judicial.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+              <path d="M12 18V6" />
+            </svg>
+          ),
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card6: {
+          title: 'Módulo 6 — Contratos e Fechamento',
+          subtitle:
+            'A blindagem final entre promessa e compromisso irretratável.',
           description: (
             <div>
               A_Definir
@@ -258,10 +348,10 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        card2: {
-          title: 'Processo Penal',
+        card7: {
+          title: 'Módulo 7 — Pós-venda e Autoproteção',
           subtitle:
-            'Acompanhamento cuidadoso em todas as etapas do processo, garantindo seus direitos.',
+            'Gestão de riscos, seguro RC e a era da prova digital auditável.',
           description: (
             <div>
               A_Definir
@@ -270,70 +360,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Gavel />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card3: {
-          title: 'Direito de Família',
-          subtitle:
-            'Apoio jurídico em momentos delicados como divórcio, pensão, guarda e conflitos familiares.',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card4: {
-          title: 'Direito Cível',
-          subtitle:
-            'Soluções jurídicas para conflitos do dia a dia, contratos, cobranças e indenizações.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: <p>Direito do Trabalho</p>,
-          subtitle:
-            'Orientação e defesa em casos de demissão, verbas trabalhistas e direitos do trabalhador.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <BriefcaseBusiness />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card6: {
-          title: 'Orientação Jurídica Preventiva',
-          subtitle:
-            'Análise e orientação para evitar problemas jurídicos antes que eles aconteçam.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -355,13 +382,13 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
+      ctaButtonText: 'A_Definir',
     },
     emergency: {
-      minitag: 'Plantão Criminal 24 Horas',
-      title: 'Atendimento Imediato em Casos Criminais',
-      subtitle:
-        'Se você ou um familiar foi preso ou está sendo investigado, o atendimento deve ser imediato. Cada minuto é decisivo para garantir direitos, evitar abusos e preparar a defesa adequada.',
-      ctaButtonText: 'Falar com Advogado Agora',
+      minitag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -374,31 +401,25 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O DR. JOSÉ NEGREIROS',
-      FirstPartTitle: 'Nossa',
-      DestaquePartTitle: (
-        <p>
-          <span className="italic"> trajetória</span>{' '}
-        </p>
+      miniTag: 'A_Definir',
+      title: (
+        <h1>
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
+        </h1>
       ),
       SecondPartTitle: '',
-      subtitle: '',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          Atuo na advocacia com foco em oferecer soluções jurídicas claras,
-          estratégicas e personalizadas. Acredito que cada cliente vive uma
-          situação única e, por isso, faço questão de ouvir com atenção,
-          compreender o problema e orientar com transparência e responsabilidade
-          desde o primeiro contato.
+          A_Definir
           <br />
-          Minha atuação vai além da representação legal. Trabalho com uma equipe
-          qualificada e comprometida em transformar desafios jurídicos em
-          soluções seguras, sempre priorizando ética, agilidade e resultados.
-          Aqui, o cliente encontra confiança, proximidade e um atendimento
-          realmente dedicado.
           <br />
+          A_Definir
         </div>
       ),
+
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
@@ -414,7 +435,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Entre em contato',
+      ctaButtonText: 'A_Definir',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -434,13 +455,37 @@ const content = {
       //   labelYoutube: 'Siga-nos no Youtube',
       // },
     },
+    // team: {
+    //   miniTag: ' A_Definir',
+    //   title: (
+    //     <h1>
+    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
+    //       A_Definir
+    //     </h1>
+    //   ),
+    //   subtitle: 'A_Definir',
+    //   cards: {
+    //     card1: {
+    //       img1: team1,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //     card2: {
+    //       img2: team2,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //   },
+    // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Como
-          <span className="destaque italic font-light"> protegemos</span> seus
-          direitos
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
       subtitle: '',
@@ -449,54 +494,46 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise Pessoal e Detalhada',
-          cardDescription:
-            'Estudo individual do seu caso para definir o caminho mais seguro e eficaz',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Atuação com Rigor Técnico',
-          cardDescription:
-            'Revisão de documentos, cálculos e provas para garantir a melhor solução legal.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Atendimento Transparente e Ágil',
-          cardDescription:
-            'Informações claras e em tempo real, com toda a parte processual cuidada pelo escritório.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Defesa Concreta e Eficiente',
-          cardDescription:
-            'Acompanhamento completo em todas as etapas, buscando resultados sólidos e seguros.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
+      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: <h1>Proteja seus direitos agora</h1>,
-      subtitle:
-        'Fale com um especialista e receba orientação estratégica imediata para o seu caso.',
-      subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-          <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-        </p>
+      miniTag: 'Decisão Profissional',
+      title: <h1>Dê o próximo passo na sua carreira</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">
+            A diferença entre vender imóveis e atuar com segurança jurídica
+            começa agora.
+          </p>
+        </div>
       ),
-      titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
-      ),
-      ctaButtonText: 'Converse agora com um advogado',
-      ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso',
+          text: ' Análise inicial do seu caso criminal',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado',
+          text: ' Atendimento direto com advogado criminalista',
         },
         label3: {
           icon: <Check />,
@@ -511,6 +548,17 @@ const content = {
           text: ' Mais segurança para você e sua família em um momento decisivo',
         },
       },
+      // subtitleDireita: (
+      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
+      //   </p>
+      // ),
+      // titleDireita: (
+      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      // ),
+      ctaButtonText: 'Quero alavancar minha carreira',
+      ctaButtonAriaLabel:
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -522,29 +570,25 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
-          answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
-          answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
-          answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
-          answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

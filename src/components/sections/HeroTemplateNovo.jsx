@@ -33,6 +33,7 @@ function HeroTemplateNovo({
   bgAlertHero,
   textDestaque,
   borderColor,
+  obs,
   obsTwo,
 }) {
   switch (colorMode) {
@@ -108,7 +109,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[60px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -189,31 +190,33 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                {/* <div className="relative flex ">
+              {obs && (
+                <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
+                  {/* <div className="relative flex ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
                 </div> */}
-                ⚠️
-                <span
-                  className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
-                >
-                  {/* <span>
-                    <Check />
-                  </span>{' '} */}
-                  {content.texts.hero.obsHero.text}
-                </span>
-                {obsTwo && (
+                  ⚠️
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >
-                    <span>
-                      <FileText />
-                    </span>{' '}
-                    {content.texts.hero.obsHero.textTwo}
+                    {/* <span>
+                    <Check />
+                  </span>{' '} */}
+                    {content.texts.hero.obsHero.text}
                   </span>
-                )}
-              </div>
+                  {obsTwo && (
+                    <span
+                      className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                    >
+                      <span>
+                        <FileText />
+                      </span>{' '}
+                      {content.texts.hero.obsHero.textTwo}
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Image */}

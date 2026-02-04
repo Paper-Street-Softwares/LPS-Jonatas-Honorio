@@ -34,7 +34,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
@@ -48,7 +48,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
       textObservation = 'text-white'
       break
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       bgAccordion = 'rgba(0,0,0,0.8)'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -169,7 +169,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                   colorMode={colorMode}
                 />
 
-                {/* <div className="w-full">
+                <div className="w-full">
                   <div>
                     {features.map((item, index) => (
                       <Accordion
@@ -206,9 +206,9 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                       </Accordion>
                     ))}
                   </div>
-                </div> */}
+                </div>
 
-                <div className="grid tablet1:grid-cols-2 gap-6">
+                {/* <div className="grid tablet1:grid-cols-2 gap-6">
                   {features.slice(0, 6).map((feature, idx) => (
                     <MotionDivDownToUp>
                       <div
@@ -233,7 +233,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                       </div>
                     </MotionDivDownToUp>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
