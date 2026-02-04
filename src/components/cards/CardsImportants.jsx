@@ -13,16 +13,16 @@ function CardsImportants({ title, paragraph, colorMode }) {
         'group-hover:bg-white group-hover:border-2 group-hover:border-black'
       titleMode = 'text-corTitulosPreto group-hover:text-corTitulosBranca'
       description =
-        'text-corOutrosTextosBranca group-hover:text-corOutrosTextosBranca'
+        'text-corOutrosTextosPreto group-hover:text-corOutrosTextosBranca'
       break
     case 'dark':
       bgCard = 'bg-darkOpacity hover:bg-white'
       bgCircle = 'bg-darkOpacity'
       bgCircleHover =
         'group-hover:bg-white group-hover:border-2 group-hover:border-black'
-      titleMode = 'text-corTitulosBranca group-hover:text-corTitulosPreto'
+      titleMode = 'text-corTitulosPreto group-hover:text-corTitulosPreto'
       description =
-        'text-corOutrosTextosBranca group-hover:text-corOutrosTextosPreto'
+        'text-corOutrosTextosPreto group-hover:text-corOutrosTextosPreto'
       break
     default:
       bgCard = 'bg-white hover:bg-black'
@@ -38,7 +38,7 @@ function CardsImportants({ title, paragraph, colorMode }) {
       <div
         className={`relative h-fit shadow-lg max-w-[400px] py-12 px-10 rounded-[18px] flex flex-col gap-4 font-secondFont group transition-all duration-700 ${bgCard}`}
       >
-        <h1 className={`text-start font-bold duration-700  ${titleMode}`}>
+        <h1 className={`text-start font-bold duration-700 ${titleMode}`}>
           {title}
         </h1>
         <p className={`text-start ${description} duration-700`}>{paragraph}</p>

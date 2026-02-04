@@ -33,6 +33,7 @@ function HeroTemplateNovo({
   bgAlertHero,
   textDestaque,
   borderColor,
+  obs,
   obsTwo,
 }) {
   switch (colorMode) {
@@ -189,31 +190,33 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                {/* <div className="relative flex ">
+              {obs && (
+                <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
+                  {/* <div className="relative flex ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
                 </div> */}
-                ⚠️
-                <span
-                  className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
-                >
-                  {/* <span>
-                    <Check />
-                  </span>{' '} */}
-                  {content.texts.hero.obsHero.text}
-                </span>
-                {obsTwo && (
+                  ⚠️
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >
-                    <span>
-                      <FileText />
-                    </span>{' '}
-                    {content.texts.hero.obsHero.textTwo}
+                    {/* <span>
+                    <Check />
+                  </span>{' '} */}
+                    {content.texts.hero.obsHero.text}
                   </span>
-                )}
-              </div>
+                  {obsTwo && (
+                    <span
+                      className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                    >
+                      <span>
+                        <FileText />
+                      </span>{' '}
+                      {content.texts.hero.obsHero.textTwo}
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Image */}

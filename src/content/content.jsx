@@ -35,7 +35,7 @@ export const infos = {
   name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'complianceimobiliario.com.br', // Sem "www"
   phone: {
     ddd: '00',
     firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
@@ -102,8 +102,8 @@ const content = {
       },
       menuItems: [
         'Início',
-        'Serviços',
-        'Sobre',
+        // 'Serviços',
+        // 'Sobre',
         // 'Perguntas',
         // 'Blog',
         // 'Mapa',
@@ -114,12 +114,13 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
+      miniTag: 'Compliance Imobiliário Avançado',
       title: (
         <h1>
-          A_Definir{' '}
+          Pare de ser um “Vendedor de Imóveis” e torne-se um Agente de Segurança
+          Jurídica de{' '}
           <span className="destaque relative italic font-light">
-            A_Definir
+            Elite
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -147,17 +148,25 @@ const content = {
               </svg>
             </span>
           </span>
-          ?
         </h1>
       ),
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Domine o Compliance Imobiliário e blinde sua comissão, sua carreira e
+          o patrimônio dos seus clientes com o método de Due Diligence do Dr.
+          Jonatas Honório.
+          <br />
+          <br />O único treinamento com videoaulas de casos reais e minutas
+          contratuais blindadas prontas para uso.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Quero me tornar um Agente de Segurança Jurídica agora',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
@@ -186,47 +195,52 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: 'Riscos Reais da Atuação Imobiliária',
+      title: 'Você está preparado para lidar com isso?',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Vícios ocultos',
+          paragraph:
+            'A responsabilidade sobre a qualidade do imóvel vem sendo ampliada pelos tribunais',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Atrasos de obra',
+          paragraph:
+            'Entenda quando a imobiliária pode — ou não — responder solidariamente.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Bypass e perda de comissão',
+          paragraph:
+            'Saiba usar a cláusula de exclusividade e o Art. 726 do Código Civil como escudo jurídico.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Riscos penais',
+          paragraph:
+            'Compreenda a linha tênue entre erro operacional e apropriação indébita.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs: '',
+      ctaButtonText: 'Acesse agora o curso',
     },
     features: {
-      miniTag: 'A_Definir',
+      miniTag: 'Conteúdo Programático',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>
-          A_Definir
+          O que
+          <span className="destaque italic font-light"> você </span>
+          vai aprender
         </h1>
       ),
-      subtitle: 'A_Definir',
+      subtitle: '',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: 'A_Definir',
       subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Módulo 1 — O Corretor no Sistema Jurídico',
+          subtitle:
+            'A anatomia jurídica da profissão e a Teoria do Resultado Útil.',
           description: (
             <div>
               A_Definir
@@ -240,8 +254,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Módulo 2 — Compliance na Captação',
+          subtitle: 'A captação como marco zero da responsabilidade civil.',
           description: (
             <div>
               A_Definir
@@ -255,8 +269,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Módulo 3 — Documentação do Imóvel',
+          subtitle:
+            'Engenharia da segurança jurídica e o Princípio da Concentração na Matrícula.',
           description: (
             <div>
               A_Definir <br />
@@ -269,8 +284,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Módulo 4 — Documentação das Partes (KYC)',
+          subtitle:
+            'Prevenção à lavagem de dinheiro (COAF) e análise de capacidade civil.',
           description: (
             <div>
               A_Definir
@@ -284,8 +300,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Módulo 5 — Publicidade e Oferta',
+          subtitle:
+            'Como evitar que um anúncio no Instagram se torne uma condenação judicial.',
           description: (
             <div>
               A_Definir
@@ -316,8 +333,25 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Módulo 6 — Contratos e Fechamento',
+          subtitle:
+            'A blindagem final entre promessa e compromisso irretratável.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card7: {
+          title: 'Módulo 7 — Pós-venda e Autoproteção',
+          subtitle:
+            'Gestão de riscos, seguro RC e a era da prova digital auditável.',
           description: (
             <div>
               A_Definir
@@ -482,11 +516,14 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'A_Definir',
-      title: <h1>A_Definir</h1>,
+      miniTag: 'Decisão Profissional',
+      title: <h1>Dê o próximo passo na sua carreira</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            A diferença entre vender imóveis e atuar com segurança jurídica
+            começa agora.
+          </p>
         </div>
       ),
       container: {
@@ -519,7 +556,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Quero me tornar um Agente de Segurança Jurídica agora',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
