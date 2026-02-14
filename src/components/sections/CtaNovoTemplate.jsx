@@ -1,42 +1,42 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import content from '../../content/content'
-import { whatsAppThemes } from '../../context/UseContextArchive'
-import { Phone } from 'lucide-react'
-import WhatsappForm from '../interactives/WhatsappForm'
-import FormAndAdress from '../interactives/Forms/FormAndAdress'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import { motion } from "framer-motion";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import content from "../../content/content";
+import { whatsAppThemes } from "../../context/UseContextArchive";
+import { Phone } from "lucide-react";
+import WhatsappForm from "../interactives/WhatsappForm";
+import FormAndAdress from "../interactives/Forms/FormAndAdress";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function CtaNovoTemplate({ colorMode, container }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
+  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque;
 
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-terciary/60'
-      miniTagCtaDark = 'text-primaryDark'
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-black'
-      miniTagCtaDark = 'text-primaryLight'
-      break
+    case "light":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      backgroundMode = "bg-terciary/60";
+      miniTagCtaDark = "text-primaryDark";
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corTitulosBranca/60";
+      textDestaque = "text-primaryLight";
+      backgroundMode = "bg-black";
+      miniTagCtaDark = "text-primaryLight";
+      break;
     default:
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-primaryDark'
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
+      backgroundMode = "bg-primaryDark";
   }
 
-  const lisContainer = Object.values(content.texts.ctaSecondary.container)
+  const lisContainer = Object.values(content.texts.ctaSecondary.container);
 
   return (
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
@@ -55,7 +55,7 @@ function CtaNovoTemplate({ colorMode, container }) {
               {content.texts.ctaSecondary.title}
             </h2>
             <p
-              className={`text-lg font-secondFont font-light md:text-xl max-w-2xl mx-auto mb-10 ${textOpacity}`}
+              className={`text-lg font-secondFont font-light md:text-xl max-w-2xl mx-auto mb-10 text-justify ${textOpacity}`}
             >
               {content.texts.ctaSecondary.subtitle}
             </p>
@@ -109,7 +109,7 @@ function CtaNovoTemplate({ colorMode, container }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default CtaNovoTemplate
+export default CtaNovoTemplate;

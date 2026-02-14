@@ -1,4 +1,4 @@
-import { Layers } from 'lucide-react'
+import { Layers } from "lucide-react";
 
 export default function MethodSection() {
   return (
@@ -18,19 +18,19 @@ export default function MethodSection() {
         </h2>
 
         {/* Texto */}
-        <div className="space-y-5 text-lg text-black max-w-3xl">
+        <div className="space-y-5 text-lg text-black max-w-3xl text-justify desktop1:text-center">
           <p>Este não é um curso genérico.</p>
 
           <p>
-            É um{' '}
+            É um{" "}
             <span className="font-semibold text-black/90">
               treinamento estruturado em 7 módulos de Compliance Avançado
             </span>
-            , criado para transformar sua mentalidade de{' '}
+            , criado para transformar sua mentalidade de{" "}
             <span className="font-semibold text-black/90">
               intermediador comercial
-            </span>{' '}
-            em{' '}
+            </span>{" "}
+            em{" "}
             <span className="font-semibold text-black/90">
               agente de segurança jurídica
             </span>
@@ -39,7 +39,7 @@ export default function MethodSection() {
         </div>
 
         {/* Bloco de destaque */}
-        <div className="mt-12 bg-terciary border border-neutral-200 rounded-xl p-8 max-w-3xl">
+        <div className="mt-12 bg-terciary border border-neutral-200 rounded-xl p-8 max-w-3xl text-justify desktop1:text-center">
           <p className="text-xl font-bold text-black">
             Método aplicado à prática real do mercado imobiliário.
           </p>
@@ -50,5 +50,5 @@ export default function MethodSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
