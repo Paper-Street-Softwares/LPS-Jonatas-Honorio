@@ -1,4 +1,4 @@
-import { Gavel, FileText } from 'lucide-react'
+import { Gavel, FileText } from "lucide-react";
 
 export default function DifferentialSection() {
   return (
@@ -15,7 +15,7 @@ export default function DifferentialSection() {
         </h2>
 
         {/* Subtexto */}
-        <p className="text-lg text-black mb-14 max-w-3xl">
+        <p className="text-lg text-black mb-14 max-w-3xl text-justify">
           O que você aprende aqui é exatamente o que protege sua comissão e seu
           CPF.
         </p>
@@ -31,19 +31,19 @@ export default function DifferentialSection() {
               </h3>
             </div>
 
-            <p className="text-white mb-4">
-              Análise prática de decisões recentes do STJ{' '}
+            <p className="text-white mb-4 text-justify">
+              Análise prática de decisões recentes do STJ{" "}
               <span className="font-semibold text-white">(2024/2025)</span> que
               impactam diretamente o corretor imobiliário.
             </p>
 
-            <ul className="list-disc pl-5 space-y-2 text-white mb-4">
+            <ul className="list-disc pl-5 space-y-2 text-white mb-4 text-justify">
               <li>Erros de metragem</li>
               <li>Fraudes em leilões</li>
               <li>Atrasos de obra</li>
             </ul>
 
-            <p className="font-semibold text-white">
+            <p className="font-semibold text-white text-justify">
               Você aprende como os tribunais decidem, não apenas o que a lei
               diz.
             </p>
@@ -58,27 +58,27 @@ export default function DifferentialSection() {
               </h3>
             </div>
 
-            <p className="text-white mb-4">
-              Tenha acesso a um{' '}
+            <p className="text-white mb-4 text-justify">
+              Tenha acesso a um{" "}
               <span className="font-semibold text-white">
                 arsenal jurídico validado na prática
               </span>
               , pronto para aplicação imediata no seu dia a dia profissional.
             </p>
 
-            <ul className="list-disc pl-5 space-y-2 text-white mb-4">
+            <ul className="list-disc pl-5 space-y-2 text-white mb-4 text-justify">
               <li>Contrato de Corretagem com Exclusividade</li>
               <li>Termo de Ciência de Risco e Dispensa de Certidões</li>
               <li>Cláusula de Transferência de Comissão (Tema 938 STJ)</li>
               <li>Termos de Vistoria e Entrega de Chaves</li>
             </ul>
 
-            <p className="font-semibold text-white">
+            <p className="font-semibold text-white text-justify">
               Documentos que protegem sua comissão antes do problema existir.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

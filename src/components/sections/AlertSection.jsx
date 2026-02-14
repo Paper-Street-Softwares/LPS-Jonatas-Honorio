@@ -1,4 +1,4 @@
-import { AlertTriangle } from 'lucide-react'
+import { AlertTriangle } from "lucide-react";
 
 export default function AlertSection() {
   return (
@@ -16,12 +16,12 @@ export default function AlertSection() {
 
           {/* Título */}
           <h2 className="text-3xl md:text-4xl font-mainFont font-medium mb-4 max-w-xl">
-            O mercado mudou —{' '}
+            O mercado mudou —{" "}
             <span className="text-red-800">e você pode estar em risco</span>
           </h2>
 
           {/* Texto principal */}
-          <div className="font-secondFont font-light text-black space-y-3 max-w-xl">
+          <div className="font-secondFont font-light text-black space-y-3 max-w-xl text-justify">
             <p>
               O mercado imobiliário brasileiro atravessa uma inflexão histórica.
             </p>
@@ -36,7 +36,7 @@ export default function AlertSection() {
         {/* COLUNA DIREITA — RETÂNGULOS */}
         <div className="flex flex-col gap-8">
           {/* Frase de impacto */}
-          <div className="border-l-4 border-red-800 pl-6 py-4 bg-terciary rounded-r-lg font-secondFont">
+          <div className="border-l-4 border-red-800 pl-6 py-4 bg-terciary rounded-r-lg font-secondFont ">
             <p className="text-xl font-bold">
               Não se trata mais apenas de vender bem.
             </p>
@@ -73,5 +73,5 @@ export default function AlertSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

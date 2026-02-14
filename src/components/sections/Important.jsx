@@ -1,34 +1,34 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import CardsImportants from '../cards/CardsImportants'
-import content from '../../content/content'
-import ButtonReflexo from '../../components/interactives/ButtonReflexo'
-import MotionDivDownUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import CardsImportants from "../cards/CardsImportants";
+import content from "../../content/content";
+import ButtonReflexo from "../../components/interactives/ButtonReflexo";
+import MotionDivDownUp from "../animation/MotionDivDownToUp";
 
 function Important({ colorMode }) {
-  const listCards = Object.values(content.texts.important.cards)
-  let backgroundMode, text, textOpacity, textDestaque
+  const listCards = Object.values(content.texts.important.cards);
+  let backgroundMode, text, textOpacity, textDestaque;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
-      break
-    case 'dark':
-      backgroundMode = 'bg-black'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
-      break
+    case "light":
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
+      break;
+    case "dark":
+      backgroundMode = "bg-black";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
+      break;
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
   }
 
   return (
@@ -52,7 +52,7 @@ function Important({ colorMode }) {
 
         <MotionDivDownUp>
           <p
-            className={`flex justify-center font-secondFont text-center w-full my-12 ${textOpacity}`}
+            className={`flex justify-center font-secondFont text-center w-full my-12 text-justify ${textOpacity}`}
           >
             {content.texts.important.fraseObs}
           </p>
@@ -67,7 +67,7 @@ function Important({ colorMode }) {
         </MotionDivDownUp>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default Important
+export default Important;

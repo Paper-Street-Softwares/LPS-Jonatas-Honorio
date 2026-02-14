@@ -1,5 +1,5 @@
-import React from 'react'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function SectionHeaderNovo({
   miniTitle,
@@ -17,46 +17,46 @@ function SectionHeaderNovo({
     borderCard,
     arrowColor,
     imageBorder,
-    miniTag
+    miniTag;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      cardBg = 'bg-white'
-      borderCard = 'border-border'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
-      imageBorder = 'border-white'
-      miniTag = 'text-primaryDark'
-      break
+    case "light":
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      cardBg = "bg-white";
+      borderCard = "border-border";
+      arrowColor = "text-mutedForeground group-hover:text-primaryDark";
+      imageBorder = "border-white";
+      miniTag = "text-primaryDark";
+      break;
 
-    case 'dark':
-      backgroundMode = 'bg-black'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      cardBg = 'bg-gray-900'
-      borderCard = 'border-gray-700'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryLight'
-      imageBorder = 'border-borderImage'
-      miniTag = 'text-primaryLight'
-      break
+    case "dark":
+      backgroundMode = "bg-black";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      cardBg = "bg-gray-900";
+      borderCard = "border-gray-700";
+      arrowColor = "text-mutedForeground group-hover:text-primaryLight";
+      imageBorder = "border-borderImage";
+      miniTag = "text-primaryLight";
+      break;
 
     default:
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      cardBg = 'bg-white'
-      borderCard = 'border-border'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
-      imageBorder = 'border-white'
-      miniTag = 'text-primaryLight'
+      backgroundMode = "bg-white";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      cardBg = "bg-white";
+      borderCard = "border-border";
+      arrowColor = "text-mutedForeground group-hover:text-primaryDark";
+      imageBorder = "border-white";
+      miniTag = "text-primaryLight";
   }
 
-  if (type === 'article') {
-    usage = 'text-start mb-8'
+  if (type === "article") {
+    usage = "text-start mb-8";
   } else {
-    usage = 'text-center mb-16'
+    usage = "text-center mb-16";
   }
 
   return (
@@ -79,13 +79,15 @@ function SectionHeaderNovo({
         )}
 
         {subtitle && (
-          <p className={`font-secondFont font-light ${textOpacity}`}>
+          <p
+            className={`font-secondFont font-light text-justify ${textOpacity}`}
+          >
             {subtitle}
           </p>
         )}
       </div>
     </MotionDivDownToUp>
-  )
+  );
 }
 
-export default SectionHeaderNovo
+export default SectionHeaderNovo;
