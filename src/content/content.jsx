@@ -224,7 +224,7 @@ const content = {
     },
     features: {
       miniTag: "Conteúdo Programático",
-      title: <h1>O que você aprender vai</h1>,
+      title: <h1>O que você vai aprender </h1>,
       subtitle: "",
       imgFeatures: imgFeatures,
       alt: "imagem representativa da Seção Serviços",
