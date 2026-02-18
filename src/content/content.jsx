@@ -1,9 +1,9 @@
-import logo from '../assets/imgs/logo/logo.webp'
-import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
-import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
-import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
+import logo from "../assets/imgs/logo/logo.webp";
+import logoDesktop from "../assets/imgs/logo/logoDesktop.webp";
+import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
+import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 
-import imgFeatures from '../assets/imgs/features/imgServices.webp'
+import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 // import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
@@ -25,31 +25,31 @@ import {
   Car,
   HandCoins,
   Check,
-} from 'lucide-react'
-import { Users } from 'lucide-react'
-import { FileText } from 'lucide-react'
+} from "lucide-react";
+import { Users } from "lucide-react";
+import { FileText } from "lucide-react";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: 'Dr. Jonatas Honório',
-  email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'complianceimobiliario.com.br', // Sem "www"
+  name: "Dr. Jonatas Honório",
+  email: "contato", // Email desejado pelo cliente
+  emailSecundario: "A_Definir", // Email desejado pelo cliente
+  domain: "complianceimobiliario.com.br", // Sem "www"
   phone: {
-    ddd: '31',
-    firstPart: '99176', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '1967', // Apenas os 4 últimos números
+    ddd: "31",
+    firstPart: "99176", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "1967", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -75,18 +75,18 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
-  facebookProfile: '',
-  linkeDinProfile: '',
-  x: '',
-  tiktokProfile: '',
+  instagramProfile: "", // Sem o @
+  facebookProfile: "",
+  linkeDinProfile: "",
+  x: "",
+  tiktokProfile: "",
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
-    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
-  slogan: '',
-}
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const content = {
   texts: {
@@ -101,24 +101,24 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        'Início',
+        "Início",
         // 'Serviços',
         // 'Sobre',
         // 'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
-      ariaLabel: 'Botão de Contato',
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      menuId: ["home", "feature", "about"],
+      ariaLabel: "Botão de Contato",
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: 'Compliance Imobiliário Avançado',
+      miniTag: "Compliance Imobiliário Avançado",
       title: (
         <h1>
           Pare de ser um “Vendedor de Imóveis” e torne-se um Agente de Segurança
-          Jurídica de{' '}
+          Jurídica de{" "}
           <span className="destaque relative italic font-light">
             Elite
             <span>
@@ -163,84 +163,78 @@ const content = {
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
-      alt: 'Imagem ilustrativa da Seção Início',
+      alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero conhecer o método',
-      ctaButtonTextSecondary: 'A_Definir',
+        "Botão para chamada de ação para contato pelo whatsapp",
+      ctaButtonText: "Quero conhecer o método",
+      ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
-        textTwo: 'A_Definir',
+        text: "A_Definir",
+        textTwo: "A_Definir",
       },
-      secondaryCta: 'Contato',
+      secondaryCta: "Contato",
       images: {
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     important: {
-      miniTag: 'Riscos Reais da Atuação Imobiliária',
-      title: 'Você está preparado para lidar com isso?',
+      miniTag: "Riscos Reais da Atuação Imobiliária",
+      title: "Você está preparado para lidar com isso?",
       cards: {
         card1: {
-          title: 'Vícios ocultos',
+          title: "Vícios ocultos",
           paragraph:
-            'A responsabilidade sobre a qualidade do imóvel vem sendo ampliada pelos tribunais',
+            "A responsabilidade sobre a qualidade do imóvel vem sendo ampliada pelos tribunais",
         },
         card2: {
-          title: 'Atrasos de obra',
+          title: "Atrasos de obra",
           paragraph:
-            'Entenda quando a imobiliária pode — ou não — responder solidariamente.',
+            "Entenda quando a imobiliária pode — ou não — responder solidariamente.",
         },
         card3: {
-          title: 'Bypass e perda de comissão',
+          title: "Bypass e perda de comissão",
           paragraph:
-            'Saiba usar a cláusula de exclusividade e o Art. 726 do Código Civil como escudo jurídico.',
+            "Saiba usar a cláusula de exclusividade e o Art. 726 do Código Civil como escudo jurídico.",
         },
         card4: {
-          title: 'Riscos penais',
+          title: "Riscos penais",
           paragraph:
-            'Compreenda a linha tênue entre erro operacional e apropriação indébita.',
+            "Compreenda a linha tênue entre erro operacional e apropriação indébita.",
         },
       },
-      fraseObs: '',
-      ctaButtonText: 'Acesse agora o curso',
+      fraseObs: "",
+      ctaButtonText: "Acesse agora o curso",
     },
     features: {
-      miniTag: 'Conteúdo Programático',
-      title: (
-        <h1>
-          O que
-          <span className="destaque italic font-light"> você </span>
-          vai aprender
-        </h1>
-      ),
-      subtitle: '',
+      miniTag: "Conteúdo Programático",
+      title: <h1>O que você aprender vai</h1>,
+      subtitle: "",
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      alt: "imagem representativa da Seção Serviços",
+      titleMessageFeature: "A_Definir",
+      subtitleMessageFeature: "A_Definir",
       cards: {
         card1: {
-          title: 'Módulo 1 — O Corretor no Sistema Jurídico',
+          title: "Módulo 1 — O Corretor no Sistema Jurídico",
           subtitle:
-            'A anatomia jurídica da profissão e a Teoria do Resultado Útil.',
+            "A anatomia jurídica da profissão e a Teoria do Resultado Útil.",
           description: (
             <div>
               A_Definir
@@ -250,12 +244,12 @@ const content = {
             </div>
           ),
           icon: <Lock />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: 'Módulo 2 — Compliance na Captação',
-          subtitle: 'A captação como marco zero da responsabilidade civil.',
+          title: "Módulo 2 — Compliance na Captação",
+          subtitle: "A captação como marco zero da responsabilidade civil.",
           description: (
             <div>
               A_Definir
@@ -265,13 +259,13 @@ const content = {
             </div>
           ),
           icon: <Car />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: 'Módulo 3 — Documentação do Imóvel',
+          title: "Módulo 3 — Documentação do Imóvel",
           subtitle:
-            'Engenharia da segurança jurídica e o Princípio da Concentração na Matrícula.',
+            "Engenharia da segurança jurídica e o Princípio da Concentração na Matrícula.",
           description: (
             <div>
               A_Definir <br />
@@ -280,13 +274,13 @@ const content = {
             </div>
           ),
           icon: <HandCoins />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: 'Módulo 4 — Documentação das Partes (KYC)',
+          title: "Módulo 4 — Documentação das Partes (KYC)",
           subtitle:
-            'Prevenção à lavagem de dinheiro (COAF) e análise de capacidade civil.',
+            "Prevenção à lavagem de dinheiro (COAF) e análise de capacidade civil.",
           description: (
             <div>
               A_Definir
@@ -296,13 +290,13 @@ const content = {
             </div>
           ),
           icon: <FileText />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card5: {
-          title: 'Módulo 5 — Publicidade e Oferta',
+          title: "Módulo 5 — Publicidade e Oferta",
           subtitle:
-            'Como evitar que um anúncio no Instagram se torne uma condenação judicial.',
+            "Como evitar que um anúncio no Instagram se torne uma condenação judicial.",
           description: (
             <div>
               A_Definir
@@ -329,13 +323,13 @@ const content = {
               <path d="M12 18V6" />
             </svg>
           ),
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card6: {
-          title: 'Módulo 6 — Contratos e Fechamento',
+          title: "Módulo 6 — Contratos e Fechamento",
           subtitle:
-            'A blindagem final entre promessa e compromisso irretratável.',
+            "A blindagem final entre promessa e compromisso irretratável.",
           description: (
             <div>
               A_Definir
@@ -345,13 +339,13 @@ const content = {
             </div>
           ),
           icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card7: {
-          title: 'Módulo 7 — Pós-venda e Autoproteção',
+          title: "Módulo 7 — Pós-venda e Autoproteção",
           subtitle:
-            'Gestão de riscos, seguro RC e a era da prova digital auditável.',
+            "Gestão de riscos, seguro RC e a era da prova digital auditável.",
           description: (
             <div>
               A_Definir
@@ -361,56 +355,56 @@ const content = {
             </div>
           ),
           icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
       },
       moreFeatures: {
         card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: "A_Definir",
     },
     emergency: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      ctaButtonText: "A_Definir",
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      embedsrc: "A_Definir",
     },
     about: {
       imagem: {
         // img: aboutImg,
-        alt: 'Imagem ilustrativa da Seção Sobre',
+        alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: 'A_Definir',
+      miniTag: "A_Definir",
       title: (
         <h1>
           A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          <span className="destaque italic font-light"> A_Definir</span>{" "}
           A_Definir
         </h1>
       ),
-      SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      SecondPartTitle: "",
+      subtitle: "A_Definir",
       paragraph: (
         <div>
           A_Definir
@@ -420,7 +414,7 @@ const content = {
         </div>
       ),
 
-      buttonModalLabelAbout: 'Continuar lendo',
+      buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="text-mutedForeground font-secondFont">
           A_Definir
@@ -432,10 +426,10 @@ const content = {
           A_Definir
         </p>
       ),
-      paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
-      ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      paragraphModalCta: "Entre em contato",
+      titleModal: "A_Definir",
+      ctaButtonAriaLabel: "Botão para entrar em contato",
+      ctaButtonText: "A_Definir",
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -480,7 +474,7 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'A_Definir',
+      miniTag: "A_Definir",
       title: (
         <h1>
           A_Definir
@@ -488,35 +482,35 @@ const content = {
           A_Definir
         </h1>
       ),
-      subtitle: '',
+      subtitle: "",
       // img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: "A_Definir",
+          cardDescription: "A_Definir",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: "A_Definir",
+          cardDescription: "A_Definir",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: "A_Definir",
+          cardDescription: "A_Definir",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: "A_Definir",
+          cardDescription: "A_Definir",
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: "A_Definir",
     },
     ctaSecondary: {
-      miniTag: 'Decisão Profissional',
+      miniTag: "Decisão Profissional",
       title: <h1>Dê o próximo passo na sua carreira</h1>,
       subtitle: (
         <div>
@@ -529,23 +523,23 @@ const content = {
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: " Análise inicial do seu caso criminal",
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: " Atendimento direto com advogado criminalista",
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: " Resposta rápida e acompanhamento pelo WhatsApp",
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: " Atuação iniciada imediatamente após a análise",
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: " Mais segurança para você e sua família em um momento decisivo",
         },
       },
       // subtitleDireita: (
@@ -556,9 +550,9 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Quero alavancar minha carreira',
+      ctaButtonText: "Quero alavancar minha carreira",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
+        "Botão para chamada de ação para contato pelo whatsapp",
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -570,28 +564,28 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
+      miniTag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: "A_Definir",
+          answer: "A_Definir",
         },
       },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
+      paragraph: "Clique aqui caso tenha mais dúvidas",
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -861,13 +855,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
-      midSectionName: 'Até mais',
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      midSectionName: "Até mais",
       footerText:
-        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
-      footerSocialText: 'Siga a gente nas redes sociais:',
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
+        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerSocialText: "Siga a gente nas redes sociais:",
+      footerNavegacaoText: "NAVEGAÇÃO",
+      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -893,7 +887,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -1100,9 +1094,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: 'Profissionalismo',
-        ponto2: 'Experiência',
-        ponto3: 'Resultados',
+        ponto1: "Profissionalismo",
+        ponto2: "Experiência",
+        ponto3: "Resultados",
       },
     },
     // socios: {
@@ -1174,8 +1168,8 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      footerNavegacaoText: "NAVEGAÇÃO",
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
     },
     svgs: {
       wpp: (
@@ -1191,11 +1185,11 @@ const content = {
       ),
     },
   },
-}
+};
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-}
+};
 
-export default content
+export default content;
