@@ -92,7 +92,7 @@ export default {
         mainFont: ["David Libre", "serif"],
         Playfair: ["Playfair", "serif"],
         // mainFont: ["Poppins", "sans-serif"],
-        secondFont: ["Inter", "sans-serif"],
+        secondFont: ["David Libre", "serif"],
         league: ["League Gothic"],
         barlow: ["Barlow Condensed"],
       },

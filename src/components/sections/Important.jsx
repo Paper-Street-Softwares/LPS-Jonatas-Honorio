@@ -52,7 +52,7 @@ function Important({ colorMode }) {
 
         <MotionDivDownUp>
           <p
-            className={`flex justify-center font-secondFont text-center w-full my-12 text-justify ${textOpacity}`}
+            className={`flex justify-center font-secondFont w-full my-12 text-justify ${textOpacity}`}
           >
             {content.texts.important.fraseObs}
           </p>
