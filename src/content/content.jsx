@@ -117,10 +117,9 @@ const content = {
       miniTag: "Compliance Imobiliário Avançado",
       title: (
         <h1>
-          Pare de ser um “Vendedor de Imóveis” e torne-se um Agente de Segurança
-          Jurídica de{" "}
+          Proteja negociações, reduza riscos e torne-se indispensável para seus
+          clientes.
           <span className="destaque relative italic font-light">
-            Elite
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
