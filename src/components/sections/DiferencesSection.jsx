@@ -5,7 +5,7 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 export default function DifferentialSection({ colorMode }) {
   return (
     <section className="w-full bg-white py-20 px-6">
-      <div className="max-w-[1215px] mx-auto flex flex-col items-center text-center">
+      <div className="max-w-[1215px] mx-auto flex flex-col items-center text-center font-mainFont">
         <SectionHeaderNovo
           miniTitle="Prova na Prática"
           title=" Mais que teoria: prática forense real"
