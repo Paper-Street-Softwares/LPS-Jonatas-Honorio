@@ -190,7 +190,13 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                               backgroundColor: bgAccordion,
                             }}
                           >
-                            <Typography component="span" className={`${text}`}>
+                            <Typography
+                              component="span"
+                              className={`${text} `}
+                              sx={{
+                                fontFamily: '"David Libre", serif',
+                              }}
+                            >
                               {item.title}
                             </Typography>
                           </AccordionSummary>
@@ -200,7 +206,12 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                               backgroundColor: bgAccordion,
                             }}
                           >
-                            <Typography className={`${textOpacity}`}>
+                            <Typography
+                              className={`${textOpacity} `}
+                              sx={{
+                                fontFamily: '"David Libre", serif',
+                              }}
+                            >
                               {item.subtitle}
                             </Typography>
                           </AccordionDetails>
